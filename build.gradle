@@ -22,3 +22,7 @@ allprojects {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
     }
 }
+
+plugins {
+  id "org.sonarqube" version "2.7"
+}
