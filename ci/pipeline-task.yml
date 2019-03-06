@@ -6,12 +6,11 @@ image_resource:
   source: {repository: busybox}
   #source: {repository: runmymind/docker-android-sdk}
     
-    
 inputs:
   - name: git-source
     
 run:
   path: ls
-  args: ['alR']
+  args: ['-alR']
   # path: bash
   # args: [./git-source/ci/run_sq_scan.sh]
