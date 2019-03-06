@@ -2,10 +2,19 @@
 
 set -eu
 
-cd ..
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+export fly_target=${fly_target:-tutorial}
+echo "Concourse API target ${fly_target}"
+echo "Tutorial $(basename $DIR)"
 
-./gradlew sonarqube \
-  -Dsonar.projectKey=sonar_proejctKey \
-  -Dsonar.organization=sonar_orga \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=sonar_login
+pushd $DIR
+  fly -t ${fly_target} set-pipeline -p tutorial-pipeline -c pipeline.yml -n
+  fly -t ${fly_target} unpause-pipeline -p tutorial-pipeline
+  fly -t ${fly_target} trigger-job -w -j tutorial-pipeline/job-test-app
+popd
+
+# ./gradlew sonarqube \
+#   -Dsonar.projectKey=sonar_proejctKey \
+#   -Dsonar.organization=sonar_orga \
+#   -Dsonar.host.url=https://sonarcloud.io \
+#   -Dsonar.login=sonar_login
