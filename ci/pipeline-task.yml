@@ -5,12 +5,12 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
   #source: {repository: runmymind/docker-android-sdk}
-    
+
 inputs:
   - name: git-source
-    
+
 run:
-  path: ./git-source/ci/run_sq_scan.sh
+  path: git-source/ci/run_sq_scan.sh
   # path: ls
   # args: ['-al', './git-source/ci/']
   #path: git-source/ci/run_sq_scan.sh
