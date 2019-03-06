@@ -12,7 +12,7 @@ inputs:
   - name: git-source
     
 run:
-  path: gradlew sonarqube
+  path: ./gradlew sonarqube
   args:
     - -Dsonar.projectKey=alindnbrg_PocketHub
     - -Dsonar.organization=alindnbrg-github
