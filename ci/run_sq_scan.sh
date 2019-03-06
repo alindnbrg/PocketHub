@@ -7,6 +7,8 @@ set -eu
 # echo "Concourse API target ${fly_target}"
 # echo "Tutorial $(basename $DIR)"
 
+cd git-source/
+
 ./gradlew sonarqube \
   -Dsonar.projectKey=sonar_proejctKey \
   -Dsonar.organization=sonar_orga \
