@@ -5,7 +5,7 @@ set -eu
 cd ..
 
 ./gradlew sonarqube \
-  -Dsonar.projectKey=alindnbrg_PocketHub \
-  -Dsonar.organization=alindnbrg-github \
+  -Dsonar.projectKey=sonar_proejctKey \
+  -Dsonar.organization=sonar_orga \
   -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=948f30cb20c7ea75e50020f41b3080103186ae9a
+  -Dsonar.login=sonar_login
