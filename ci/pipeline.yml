@@ -4,15 +4,22 @@ resources:
   type: git
   source:
     uri: https://github.com/alindnbrg/PocketHub.git
+- name: android-image
+  type: docker-image
+  source:
+    uri: helloagain/android-gradle-ci
+    tag: latest
 
 jobs:
 - name: setup
   plan:
   - get: git-source
     trigger: true
-  - task: run-build
-    file: git-source/ci/pipeline-task.yml
-    # config:
+  - get: docker-image
+  
+#   - task: run-build
+#     file: git-source/ci/pipeline-task.yml
+#     # config:
     #   platform: linux
     #   image_resource:
     #     type: docker-image
