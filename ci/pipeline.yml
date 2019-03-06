@@ -9,6 +9,7 @@ jobs:
 - name: setup
   plan:
   - get: git-source
+    trigger: true
   - task: run-build
     file: git-source/ci/pipeline-task.yml
     # config:
