@@ -12,5 +12,5 @@ inputs:
 run:
   # path: ls
   # args: ['-alR']
-  path: ./git-source/ci/run_sq_scan.sh
+  path: git-source/ci/run_sq_scan.sh
   #args: [./git-source/ci/run_sq_scan.sh]
