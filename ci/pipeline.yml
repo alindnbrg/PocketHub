@@ -20,7 +20,7 @@ jobs:
     #       repository: circleci/android
     #       tag: api-23-node
     #   inputs:
-    #     - name: git-source
+    #     - name: PocketHub
     #   run:
     #     path: uname
     #     args:
