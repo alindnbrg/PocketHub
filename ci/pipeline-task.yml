@@ -7,10 +7,10 @@ image_resource:
   source: {repository: runmymind/docker-android-sdk}
 
 inputs:
-  - name: git-source
+  - name: PocketHub
 
 run:
-  path: git-source/ci/run_sq_scan.sh
+  path: PocketHub/ci/run_sq_scan.sh
   # path: ls
   # args: ['-al', './git-source/ci/']
   #path: git-source/ci/run_sq_scan.sh
