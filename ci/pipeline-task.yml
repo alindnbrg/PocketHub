@@ -9,6 +9,7 @@ platform: linux
     
 inputs:
   - name: git-source
+  - name: android-image
     
 run:
   path: uname
