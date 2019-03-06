@@ -10,8 +10,8 @@ inputs:
   - name: git-source
     
 run:
-  # path: ./git-source/ci/run_sq_scan.sh
-  path: ls
-  args: ['-al', './git-source/ci/']
+  path: ./git-source/ci/run_sq_scan.sh
+  # path: ls
+  # args: ['-al', './git-source/ci/']
   #path: git-source/ci/run_sq_scan.sh
   #args: [./git-source/ci/run_sq_scan.sh]
