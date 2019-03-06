@@ -2,6 +2,8 @@
 
 set -eu
 
+cd ..
+
 ./gradlew sonarqube \
   -Dsonar.projectKey=alindnbrg_PocketHub \
   -Dsonar.organization=alindnbrg-github \
