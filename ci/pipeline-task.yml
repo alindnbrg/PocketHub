@@ -12,5 +12,7 @@ inputs:
   - name: git-source
     
 run:
-  path: bash
-  args: [./git-source/ci/run_sq_scan.sh]
+  path: ls
+  args: [-lsa]
+  # path: bash
+  # args: [./git-source/ci/run_sq_scan.sh]
