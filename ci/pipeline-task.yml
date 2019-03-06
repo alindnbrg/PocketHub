@@ -12,4 +12,4 @@ inputs:
   - name: git-source
     
 run:
-  path: ./ci/run-sq-scan.sh
+  path: ./ci/run_sq_scan.sh
