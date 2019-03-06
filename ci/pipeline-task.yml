@@ -13,6 +13,6 @@ inputs:
     
 run:
   #path: ./ci/run_sq_scan.sh
-  path: pwd
+  path: ls
   args:
-    - ci/
+    - -lsa
