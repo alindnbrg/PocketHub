@@ -7,7 +7,7 @@ set -eu
 # echo "Concourse API target ${fly_target}"
 # echo "Tutorial $(basename $DIR)"
 
-cd git-source/
+cd PocketHub/
 
 ./gradlew sonarqube \
   -Dsonar.projectKey=sonar_proejctKey \
