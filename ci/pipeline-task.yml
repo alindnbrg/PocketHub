@@ -1,11 +1,11 @@
 ---
 platform: linux
 
-image_resource:
-  type: docker-image
-  source:
-    repository: helloagain/android-gradle-ci
-    tag: latest
+# image_resource:
+#   type: docker-image
+#   source:
+#     repository: helloagain/android-gradle-ci
+#     tag: latest
     
 inputs:
   - name: git-source

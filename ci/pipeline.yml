@@ -7,18 +7,17 @@ resources:
 - name: android-image
   type: docker-image
   source:
-    uri: helloagain/android-gradle-ci
+    repository: helloagain/android-gradle-ci
     tag: latest
 
 jobs:
-- name: setup
+- name: setup build
   plan:
   - get: git-source
     trigger: true
-  - get: docker-image
-  
-#   - task: run-build
-#     file: git-source/ci/pipeline-task.yml
+  - get: android-image
+  - task: run-build
+    file: git-source/ci/pipeline-task.yml
 #     # config:
     #   platform: linux
     #   image_resource:
