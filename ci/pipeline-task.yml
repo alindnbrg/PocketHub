@@ -11,5 +11,5 @@ inputs:
   - name: git-source
     
 run:
-  path: uname
-  args: ['-a']
+  path: gradlew
+  args: ['assembleDebug']
