@@ -3,9 +3,10 @@ platform: linux
 
 image_resource:
   type: docker-image
-  #source: {repository: gradle}
   #source: {repository: runmymind/docker-android-sdk}
-  source: {repository: busybox}
+  #source: {repository: busybox}
+  #source: {repository: gradle}
+  source: {repository: gradle, tag: jre11-slim}
 
 inputs:
   - name: PocketHub
