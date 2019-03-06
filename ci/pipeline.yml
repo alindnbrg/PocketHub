@@ -6,7 +6,7 @@ resources:
     uri: https://github.com/alindnbrg/PocketHub.git
 
 jobs:
-- name: analyze
+- name: analyze-source
   plan:
   - get: PocketHub
     trigger: true
