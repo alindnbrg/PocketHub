@@ -13,6 +13,6 @@ inputs:
     
 run:
   path: ls
-  args: ['- lsa ./git-source/']
+  args: ['- alR']
   # path: bash
   # args: [./git-source/ci/run_sq_scan.sh]
