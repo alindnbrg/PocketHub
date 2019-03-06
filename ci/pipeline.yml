@@ -10,7 +10,7 @@ jobs:
   plan:
   - get: git-source
   - task: run-build
-    file: pipeline-task.yml
+    file: git-source/ci/pipeline-task.yml
     # config:
     #   platform: linux
     #   image_resource:
